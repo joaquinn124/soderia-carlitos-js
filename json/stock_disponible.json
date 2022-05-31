@@ -1,0 +1,19 @@
+{
+    "stock": [
+        {
+            "id": 1,
+            "Tipo": "Sifón de soda 500ml",
+            "Stock": 5500
+        },
+        {
+            "id": 2,
+            "Tipo": "Bidón agua mineral 10L",
+            "Stock": 2500
+        },
+        {
+            "id": 3,
+            "Tipo": "Bidón agua mineral 20L",
+            "Stock": 3000
+        }
+    ]
+}

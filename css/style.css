@@ -1,0 +1,2597 @@
+
+/*==========================================================================
+  GENERAL STYLES
+============================================================================ */
+body {
+	font-family: 'Rubik', sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	color: #868686;
+	overflow-x: hidden;
+}
+label {
+	font-weight: normal;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+a:hover, a:focus, a:active {
+	text-decoration: none;
+	outline: none;
+	color: #039BE5;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+ul, ol {
+	margin: 0;
+	padding-left: 17px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+	padding-left: 17px;
+}
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.428;
+	font-weight: normal;
+	color: #000000;
+	margin-top: 0;
+}
+h1 {
+	font-size: 36px;
+}
+h2 {
+	font-size: 30px;
+}
+h3 {
+	font-size: 24px;
+}
+h4 {
+	font-size: 20px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+p {
+	margin-bottom: 20px;
+}
+
+.button, button, input[type="submit"] {
+	display: inline-block;
+	padding: 9px 20px;
+	color: #FFFFFF;
+	background: #039BE5;
+	border: solid 1px #039BE5;
+	text-align: center;
+	font-size: 13px;
+	font-weight: 700;
+	-webkit-transition: all 0.4s ease 0s;
+	-moz-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+	border-radius: 4px;
+}
+
+/*-----------------------CUSTOM COL > 1500---------------------------*/
+@media (min-width: 1500px) {
+	.col-bg-1,
+	.col-bg-10,
+	.col-bg-11,
+	.col-bg-12,
+	.col-bg-2,
+	.col-bg-3,
+	.col-bg-4,
+	.col-bg-5,
+	.col-bg-6,
+	.col-bg-7,
+	.col-bg-8,
+	.col-bg-9 {
+		position: relative;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px
+	}
+	.col-bg-1,
+	.col-bg-2,
+	.col-bg-3,
+	.col-bg-4,
+	.col-bg-5,
+	.col-bg-6,
+	.col-bg-7,
+	.col-bg-8,
+	.col-bg-9,
+	.col-bg-10,
+	.col-bg-11 {
+		float: left;
+	}
+	.col-bg-12 {
+		width: 100%;
+	}
+	.col-bg-11 {
+		width: 91.66666667%;
+	}
+	.col-bg-10 {
+		width: 83.33333333%;
+	}
+	.col-bg-9 {
+		width: 75%;
+	}
+	.col-bg-8 {
+		width: 66.66666667%;
+	}
+	.col-bg-7 {
+		width: 58.33333333%;
+	}
+	.col-bg-6 {
+		width: 50%;
+	}
+	.col-bg-5 {
+		width: 41.66666667%;
+	}
+	.col-bg-4 {
+		width: 33.33333333%;
+	}
+	.col-bg-3 {
+		width: 25%;
+	}
+	.col-bg-2 {
+		width: 16.66666667%;
+	}
+	.col-bg-1 {
+		width: 8.33333333%;
+	}
+}
+/*-----------------------CUSTOM COL < 480---------------------------*/
+@media (max-width: 479px) {
+	.col-ts-1,
+	.col-ts-10,
+	.col-ts-11,
+	.col-ts-12,
+	.col-ts-2,
+	.col-ts-3,
+	.col-ts-4,
+	.col-ts-5,
+	.col-ts-6,
+	.col-ts-7,
+	.col-ts-8,
+	.col-ts-9 {
+		position: relative;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.col-ts-1,
+	.col-ts-2,
+	.col-ts-3,
+	.col-ts-4,
+	.col-ts-5,
+	.col-ts-6,
+	.col-ts-7,
+	.col-ts-8,
+	.col-ts-9,
+	.col-ts-10,
+	.col-ts-11 {
+		float: left;
+	}
+	.col-ts-12 {
+		width: 100%;
+	}
+	.col-ts-11 {
+		width: 91.66666667%;
+	}
+	.col-ts-10 {
+		width: 83.33333333%;
+	}
+	.col-ts-9 {
+		width: 75%;
+	}
+	.col-ts-8 {
+		width: 66.66666667%;
+	}
+	.col-ts-7 {
+		width: 58.33333333%;
+	}
+	.col-ts-6 {
+		width: 50%;
+	}
+	.col-ts-5 {
+		width: 41.66666667%;
+	}
+	.col-ts-4 {
+		width: 33.33333333%;
+	}
+	.col-ts-3 {
+		width: 25%;
+	}
+	.col-ts-2 {
+		width: 16.66666667%;
+	}
+	.col-ts-1 {
+		width: 8.33333333%;
+	}
+}
+/*-----------------------CUSTOM 5 COLUMNS---------------------------*/
+.col-bg-15,
+.col-bg-25,
+.col-bg-35,
+.col-bg-45,
+.col-lg-15,
+.col-lg-25,
+.col-lg-35,
+.col-lg-45,
+.col-md-15,
+.col-md-25,
+.col-md-35,
+.col-md-45,
+.col-sm-15,
+.col-sm-25,
+.col-sm-35,
+.col-sm-45,
+.col-xs-15,
+.col-xs-25,
+.col-xs-35,
+.col-xs-45,
+.col-ts-15,
+.col-ts-25,
+.col-ts-35,
+.col-ts-45 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px
+}
+.col-ts-15,
+.col-ts-25,
+.col-ts-35,
+.col-ts-45 {
+	float: left;
+}
+.col-ts-15 {
+	width: 20%;
+}
+.col-ts-25 {
+	width: 40%;
+}
+.col-ts-35 {
+	width: 60%;
+}
+.col-ts-45 {
+	width: 80%;
+}
+@media (min-width: 480px) {
+	.col-xs-15,
+	.col-xs-25,
+	.col-xs-35,
+	.col-xs-45 {
+		float: left;
+	}
+	.col-xs-15 {
+		width: 20%;
+	}
+	.col-xs-25 {
+		width: 40%;
+	}
+	.col-xs-35 {
+		width: 60%;
+	}
+	.col-xs-45 {
+		width: 80%;
+	}
+}
+@media (min-width: 768px) {
+	.col-sm-15,
+	.col-sm-25,
+	.col-sm-35,
+	.col-sm-45 {
+		float: left;
+	}
+	.col-sm-15 {
+		width: 20%;
+	}
+	.col-sm-25 {
+		width: 40%;
+	}
+	.col-sm-35 {
+		width: 60%;
+	}
+	.col-sm-45 {
+		width: 80%;
+	}
+}
+@media (min-width: 992px) {
+	.col-md-15,
+	.col-md-25,
+	.col-md-35,
+	.col-md-45 {
+		float: left;
+	}
+	.col-md-15 {
+		width: 20%;
+	}
+	.col-md-25 {
+		width: 40%;
+	}
+	.col-md-35 {
+		width: 60%;
+	}
+	.col-md-45 {
+		width: 80%;
+	}
+}
+@media (min-width: 1200px) {
+	.col-lg-15,
+	.col-lg-25,
+	.col-lg-35,
+	.col-lg-45 {
+		float: left;
+	}
+	.col-lg-15 {
+		width: 20%;
+	}
+	.col-lg-25 {
+		width: 40%;
+	}
+	.col-lg-35 {
+		width: 60%;
+	}
+	.col-lg-45 {
+		width: 80%;
+	}
+}
+@media (min-width: 1500px) {
+	.col-bg-15,
+	.col-bg-25,
+	.col-bg-35,
+	.col-bg-45 {
+		float: left;
+	}
+	.col-bg-15 {
+		width: 20%;
+	}
+	.col-bg-25 {
+		width: 40%;
+	}
+	.col-bg-35 {
+		width: 60%;
+	}
+	.col-bg-45 {
+		width: 80%;
+	}
+}
+
+/* -------------------- */
+/*   custom container   */
+/* -------------------- */
+@media (min-width: 1200px) {
+	.container {
+		width: 1200px;
+	}
+}
+/* -------------------- */
+/*     HEADER        */
+/* -------------------- */
+
+/*header-style-1*/
+
+.social-header, .header-language {
+	display: inline-block;
+	vertical-align: middle;
+}
+.social-header .socials {
+	padding-top: 10px;
+	overflow: hidden;
+}
+.social-header .social-item {
+	font-size: 23px;
+	line-height: 20px;
+	display: inline-block;
+	padding: 0 15px;
+	color: #222;
+	float: left;
+}
+.social-header .social-item:first-child {
+	padding-left: 0;
+}
+.header-language .tanajil-language {
+	padding-top: 10px;
+	margin-left: 100px;
+	position: relative;
+}
+.tanajil-language .language-toggle {
+	color: #888888;
+}
+.tanajil-submenu {
+	position: absolute;
+	background-color: #FFFFFF;
+	z-index: 10;
+	-webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+	-moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+	padding: 0;
+	margin: 0;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: .35s;
+	-o-transition: .35s;
+	transition: .35s;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	-ms-transform: translateY(10px);
+	-o-transform: translateY(10px);
+	transform: translateY(10px);
+	width: 225px;
+	height: 415px;
+}
+
+.tanajil-dropdown.open .tanajil-submenu {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
+	z-index: 1001;
+}
+.header .logo {
+	text-align: center;
+}
+.header-control {
+	text-align: right;
+}
+.header.style7 .header-control {
+	margin-top: 120px;
+}
+
+.header.style7 .header-control2 {
+	margin-left: 150px;
+	margin-top: 100px;
+}
+
+.header-control .block-header {
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	vertical-align: middle;
+	padding-left: 20px;
+}
+
+.header-control .block-header:first-child {
+	padding-left: 0;
+}
+
+.header-control .block-modules {
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	vertical-align: middle;
+	padding-left: 120px;
+	padding-bottom: 5px;
+}
+
+.blockModules1 {
+	width: 320px;
+	height: 30px;
+	color: #FFFFFF;
+	background-color: #039BE5;
+	border-radius: 5px 5px;
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+	font-size: large;
+	text-transform: uppercase;
+	padding-top: 5px;
+	padding-left: 195px;
+	margin-left: 40px;
+	
+}
+
+.blockModules2 {
+	width: 320px;
+	height: 30px;
+	color: #FFFFFF;
+	background-color: #0288D1;
+	border-radius: 5px 5px;
+	text-align: center;
+	font-family: 'Rubik', serif;
+	font-size: large;
+	text-transform: uppercase;
+	padding-top: 5px;
+	padding-left: 175px;
+	margin-left: 20px;
+}
+
+.blockModules3 {
+	width: 320px;
+	height: 30px;
+	color: #FFFFFF;
+	background-color: #01579B;
+	border-radius: 5px 5px;
+	text-align: center;
+	font-family: 'Rubik', serif;
+	font-size: large;
+	text-transform: uppercase;
+	padding-top: 5px;
+	padding-left: 155px;
+}
+
+/* -------------------- */
+/*      MAIN         */
+/* -------------------- */
+.main-content {
+	padding-bottom: 65px;
+}
+.main-content.main-content-inlookbook {
+	padding-bottom: 0;
+}
+.main-content.mansory {
+	padding-bottom: 120px;
+}
+.home-01 .main-content {
+	padding-bottom: 0;
+}
+.home-03 .main-content {
+	padding-bottom: 55px;
+}
+.home-05 .main-content {
+	padding-bottom: 0;
+}
+.tanajil-disablepopupnewsletter .checkbox {
+	margin: 0;
+	font-size: 13px;
+	color: #aaa;
+	font-style: italic;
+}
+.tanajil-disablepopupnewsletter input.tanajil_disabled_popup_by_user {
+	display: none;
+}
+.tanajil-disablepopupnewsletter .checkbox label {
+	display: table;
+	margin: 0 auto;
+	padding: 0;
+}
+.tanajil-disablepopupnewsletter span {
+	position: relative;
+	padding-left: 23px;
+	cursor: pointer;
+}
+.tanajil-disablepopupnewsletter span::before {
+	position: absolute;
+	content: '';
+	width: 17px;
+	height: 17px;
+	border: 1px solid #e9e9e9;
+	left: 0;
+	top: 0;
+}
+.tanajil-disablepopupnewsletter input[type="checkbox"]:checked + span::after {
+	font-family: 'FontAwesome';
+	content: "\f00c";
+	display: inline-block;
+	top: 1px;
+	left: 2px;
+	width: 10px;
+	height: 12px;
+	text-align: center;
+	font-size: 10px;
+	color: #444;
+	position: absolute;
+	z-index: 11;
+	padding: 0;
+	line-height: 14px;
+}
+/*popup-newsletter* style-2*/
+.kt-popup-newsletter.style-2 {
+	width: 570px;
+}
+.kt-popup-newsletter.style-2 .title {
+	padding-bottom: 0;
+	padding-top: 18px;
+}
+.kt-popup-newsletter.style-2 .sub-title {
+	margin-top: 1px;
+	margin-bottom: 0;
+}
+.kt-popup-newsletter.style-2 .tanajil-disablepopupnewsletter .checkbox {
+	margin-top: 42px;
+	text-decoration: underline;
+	font-style: normal;
+}
+.kt-popup-newsletter.style-2 .tanajil-disablepopupnewsletter span {
+	padding: 0;
+}
+.kt-popup-newsletter.style-2 .tanajil-disablepopupnewsletter span::before {
+	display: none;
+}
+.kt-popup-newsletter.style-2 .mfp-close {
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
+	text-align: center;
+	line-height: 28px;
+	color: #ffffff;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	opacity: 1;
+}
+
+/*.load-more*/
+.load-more {
+	text-align: center;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.load-more a {
+	display: inline-block;
+	height: 43px;
+	line-height: 38px;
+	border: 1px solid #f4f4f4;
+	padding: 0 10px;
+	width: 149px;
+	color: #222;
+	font-weight: 700;
+	border-radius: 40px;
+}
+.load-more a:hover, .load-more a:hover .icon {
+	color: #ffffff;
+}
+.load-more a:hover {
+	border-color: transparent;
+}
+.load-more .icon {
+	color: #aaa;
+	font-weight: normal;
+	margin-right: 5px;
+}
+/*header mobile*/
+.header-device-mobile {
+	padding: 25px 0;
+	display: none;
+	position: relative;
+}
+.header-device-mobile .wapper {
+	display: table;
+	width: 100%;
+	padding: 0 15px;
+}
+.header-device-mobile .item {
+	display: table-cell;
+	vertical-align: middle;
+}
+.header-device-mobile .item .block-sub {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background-color: #fff;
+	padding: 15px;
+	left: 0;
+	z-index: 100;
+	margin-top: 1px;
+	-webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+	-moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+	-webkit-transition: opacity .5s, -webkit-transform .5s;
+	transition: opacity .3s, transform .3s;
+	-webkit-transform: translate(0, 30px);
+	-moz-transform: translate(0, 30px);
+	-o-transform: translate(0, 30px);
+	-ms-transform: translate(0, 30px);
+	transform: translate(0, 30px);
+	opacity: 0;
+	display: block;
+	visibility: hidden;
+	padding-top: 50px;
+}
+.header-device-mobile .item.open .block-sub {
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+	opacity: 1;
+	visibility: visible;
+}
+.header-device-mobile .mobile-search-box, .header-device-mobile .mobile-settings-box, .header-device-mobile .menu-bar {
+	width: 40px;
+	padding-left: 5px;
+}
+.header-device-mobile .mobile-navigation {
+	top: auto;
+}
+.header-device-mobile .mobile-navigation, .mobile-search-box > a, .mobile-settings-box > a {
+	width: 40px;
+	height: 40px;
+	float: left;
+	border: 2px solid #dedede;
+	padding: 0;
+	text-align: center;
+	line-height: 36px;
+	color: #555;
+	font-size: 16px;
+	border-radius: 4px;
+}
+.header-device-mobile .mobile-navigation {
+	margin: 0;
+	text-align: center;
+	padding: 13px 11px 10px;
+}
+.header-device-mobile .mobile-navigation span {
+	background-color: #555;
+}
+.mobile-search-box > a, .mobile-settings-box > a:hover {
+	color: #555;
+}
+.header-device-mobile .item .block-sub .close {
+	font-size: 14px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	float: none;
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	line-height: 27px;
+	border: 1px solid #eee;
+}
+.header-device-mobile .header-searchform-box {
+	padding: 19px 0;
+}
+.header-device-mobile .header-searchform-box .search-input {
+	width: calc(100% - 100px);
+	font-size: 13px;
+	color: #999999;
+	background: #ffffff;
+}
+.header-device-mobile .block-item-title {
+	font-size: 14px;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+
+/*footer-device-mobile*/
+.footer-device-mobile {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	background-color: #fff;
+	border-top: 1px solid #eee;
+	display: none;
+}
+.footer-device-mobile-item {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.footer-device-mobile .wapper {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+.footer-device-mobile-item > a {
+	display: inline-block;
+	padding: 5px 0;
+	color: #222;
+	line-height: normal;
+}
+.footer-device-mobile-item > a .icon {
+	font-size: 20px;
+	display: block;
+	position: relative;
+	height: 30px;
+	line-height: 30px;
+	font-weight: 700;
+}
+.footer-device-mobile-item.device-cart .count-icon {
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	border-radius: 50%;
+	color: #ffffff;
+	font-weight: 700;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: -10px;
+	font-size: 12px;
+}
+/*border - style*/
+.mega-menu .border-custom {
+	margin-top: 30px;
+}
+.footer .border-custom span {
+	border-bottom: 1px solid #2b2b2b;
+}
+.border-custom span {
+	width: 100%;
+	border-bottom: 1px solid #eee;
+	display: inline-block;
+	float: left
+}
+/*backtotop*/
+.backtotop {
+	display: none;
+	width: 50px;
+	height: 50px;
+	font-size: 24px;
+	font-weight: 700;
+	background: #333;
+	color: #fff;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 50px;
+	right: 25px;
+	text-align: center;
+	line-height: 50px;
+	z-index: 999;
+}
+.backtotop.show {
+	display: block;
+}
+.backtotop:hover {
+	background: #039BE5;
+	color: #FFFFFF !important;
+}
+/*coppyright*/
+.coppyright {
+	font-size: 15px;
+	color: #888888;
+	padding: 5px 0;
+}
+.coppyright a:not(:hover) {
+	color: #fff;
+}
+/*tanajil-payment*/
+.footer-end .tanajil-payment {
+	cursor: pointer;
+	text-align: right;
+}
+.footer-end .tanajil-payment:hover {
+	opacity: 0.6;
+}
+/*footer demo*/
+.footer-end .demos {
+	text-align: right;
+}
+.footer-end .demos a {
+	min-width: 139px;
+	height: 34px;
+	border: 1px solid #363636;
+	display: inline-block;
+	text-align: center;
+	line-height: 30px;
+	text-transform: capitalize;
+	color: #888888;
+	font-size: 13px;
+}
+.footer-end .demos a::after {
+	font-family: 'FontAwesome';
+	content: "\f107";
+	margin-left: 5px;
+	font-size: 15px;
+	color: #888;
+	font-weight: normal;
+	vertical-align: top;
+}
+.footer-end .demos span {
+	color: #ffffff;
+}
+/*header-top-message*/
+.header-top-message {
+	background-color: #111111;
+	color: #aaaaaa;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 15px;
+	padding: 12px 15px;
+}
+.header-top-message .icon {
+	color: #fff;
+	font-size: 22px;
+}
+.header-top-message a {
+	color: #fff;
+	text-decoration: underline;
+}
+.header-top-message a:hover {
+	color: #ffffff;
+}
+/*header-block-text*/
+.header-block-text {
+	background-color: #111111;
+	color: #aaaaaa;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 15px;
+	padding: 12px 0;
+}
+.header-block-text .icon {
+	color: #fff;
+	font-size: 18px;
+	margin-right: 10px;
+}
+.header-block-text a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+.header-block-text a:hover {
+	color: #aaaaaa;
+}
+/*tabs*/
+.tab-container {
+	position: relative;
+}
+.tab-container .tab-panel {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	height: 1px;
+	overflow: hidden
+}
+.tab-container .active {
+	opacity: 1;
+	visibility: inherit;
+	position: inherit;
+	-vendor-animation-duration: 0.3s;
+	-vendor-animation-delay: 1s;
+	-vendor-animation-iteration-count: infinite;
+	height: auto;
+	overflow: inherit;
+}
+/*---------BREADCRUMB-----------*/
+.breadcrumb {
+	padding: 34px 0 30px;
+	background: #ffffff;
+	margin: 0;
+}
+.breadcrumb > li {
+	display: inline-block;
+	list-style: none;
+	font-weight: 500;
+	font-size: 14px;
+}
+.breadcrumb a {
+	color: #888888;
+	
+}
+.breadcrumb > .active {
+	color: #222;
+}
+.breadcrumb > li + li:before {
+	padding: 0 8px;
+	content: "\f101";
+	font-family: 'FontAwesome';
+	font-weight: 400;
+}
+
+/*============================================
+
+===================HOME PAGE=================
+
+=============================================*/
+/*-------------------------
+----------HOME 01----------
+--------------------------*/
+
+/* home1home1 */
+
+/*home-slider*/
+.slider-item .slider-inner {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.slider-item .title-small {
+	color: #039BE5;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	font-weight: 700;
+	padding: 0;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+}
+.slider-item.slick-active .title-small {
+	animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	animation-fill-mode: both;
+	-webkit-animation-fill-mode: both;
+	animation-name: bounceInDown;
+	-webkit-animation-name: bounceInDown;
+}
+.slider-item .title-big {
+	font-size: 26px;
+	color: #fff;
+	font-weight: 700;
+	line-height: 1;
+	max-width: 370px;
+	font-family: 'Rubik', serif;
+	/* text-transform: capitalize; */
+}
+.slider-item.slick-active .title-big {
+	animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	animation-fill-mode: both;
+	-webkit-animation-fill-mode: both;
+	animation-name: bounceInRight;
+	-webkit-animation-name: bounceInRight;
+}
+.slider-item .price {
+	font-size: 18px;
+	letter-spacing: -0.05em;
+	font-weight: 500;
+	display: block;
+	color: #dbdbdb;
+	margin-bottom: 35px;
+}
+.slider-item.slick-active .price, .slider-item.slick-active .description {
+	animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	animation-fill-mode: both;
+	-webkit-animation-fill-mode: both;
+	animation-name: bounceInLeft;
+	-webkit-animation-name: bounceInLeft;
+}
+.slider-item .price .number-price {
+	text-transform: uppercase;
+	font-size: 19px;
+	color: #039BE5;
+	font-weight: 700;
+	position: relative;
+}
+.slider-item .slider-infor .button {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-right: 20px;
+	padding-left: 20px;
+	background: #039BE5;
+	border: 1px solid #039BE5;
+	color: #fff;
+	margin-right: 5px;
+	min-width: 110px;
+	border-radius: 4px;
+}
+
+.slider-item .slider-infor .button:hover {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-right: 20px;
+	padding-left: 20px;
+	background: #FFFFFF;
+	border: 1px solid #039BE5;
+	color: #039BE5;
+	margin-right: 5px;
+	min-width: 110px;
+	border-radius: 4px;
+}
+
+/*slider-banner*/
+.home-slider-banner {
+	margin-bottom: 20px;
+}
+.home-slider-banner .silider-wrapp, .home-slider-banner .banner-wrapp {
+	padding: 0 10px;
+}
+.home-slider-banner .silider-wrapp {
+	margin-bottom: 20px;
+}
+.slider-item.style7 .slider-inner {
+	background-image: url(../img/icon-shopping-cart-13.jpg);
+}
+.slider-item.style7 .slider-inner .slider-infor {
+	padding-bottom: 185px;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 400px;
+}
+
+/*newsletter*/
+.tanajil-newsletter.style3 {
+	overflow: hidden;
+	padding: 90px 0 80px;
+	background-image: url(../img/pngegg_horiz.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	text-align: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.tanajil-newsletter.style3 .newsletter-form-wrap {
+	display: inline-block;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.tanajil-newsletter.style3 .title {
+	font-size: 26px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	position: relative;
+	text-transform: uppercase;
+	font-family: 'Rubik', serif;
+	color: #555555;
+}
+.tanajil-newsletter.style3 .title::before {
+	position: absolute;
+	content: '';
+	width: 70px;
+	border-bottom: 4px solid #039BE5;
+	bottom: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	color: #FFFFFF;
+}
+.tanajil-newsletter.style3 .subtitle {
+	margin-bottom: 15px;
+	font-size: 16px;
+	color: #555555;
+}
+.tanajil-newsletter.style3 .email-newsletter {
+	width: 313px;
+	height: 44px;
+	border-color: #e9e9e9;
+	border-radius: 5px 5px;
+	background: #fff;
+	color: #888;
+	margin-bottom: 10px;
+	border: none;
+	text-align: left;
+}
+.tanajil-newsletter.style3 .submit-newsletter {
+	min-width: 139px;
+	margin-left: 5px;
+	background-color: #039BE5;
+	color: #ffffff;
+	vertical-align: top;
+	font-size: 14px;
+}
+
+/*----------------------*/
+/*       banner         */
+/* -------------------- */
+/*banner shop*/
+.item-banner .inner {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 4px;
+	position: relative;
+}
+.item-banner .title {
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	/* text-transform: capitalize; */
+	font-family: 'Rubik', serif;
+}
+
+/*banner home 03*/
+.item-banner.style7 .inner {
+	background-image: url(../img/water\ delivery\ service\ icon\ \(1\).jpg);
+}
+
+.item-banner.style7 .inner2 {
+	background-image: url(../img/water\ delivery\ service\ icon\ \(2\).jpg);
+}
+
+.item-banner.style7 .banner-content {
+	padding-top: 58px;
+	padding-right: 165px;
+	padding-bottom: 60px;
+	padding-left: 30px;
+	margin-bottom: 20px;
+}
+
+.item-banner.style7 .banner-content a:hover {
+	background: #ffffff;
+	color: #039BE5;
+	border-color: #039BE5;
+}
+
+.item-banner.style7 .banner-content2 {
+	padding-top: 58px;
+	padding-right: 165px;
+	padding-bottom: 60px;
+	padding-left: 30px;
+	margin-bottom: 20px;
+	background-image: url(../img/water\ delivery\ service\ icon\ \(2\).jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	/* border: solid #039BE5; */
+}
+
+.item-banner.style7 .banner-content2 a:hover {
+	background: #ffffff;
+	color: #039BE5;
+	border-color: #039BE5;
+}
+
+.item-banner.style7 .title, .item-banner.style8 .title {
+	font-size: 26px;
+	line-height: 32px;
+	color: #555555;
+}
+.item-banner.style7 .description {
+	margin-bottom: 15px;
+	color: #555555;
+}
+
+/*----------------------*/
+/*       FOOTER         */
+/* -------------------- */
+
+/* Footerbackgroundcolor */
+.footer {
+	background: #151515;
+}
+.footer .container-wapper {
+	padding-top: 60px;
+	padding-bottom: 35px;
+}
+.footer .footer-end {
+	padding: 20px 0;
+}
+
+.footer .widget-box .single-img {
+	margin-bottom: 20px;
+}
+.footer .widget-box .text-content-elememnt {
+	font-size: 15px;
+}
+.footer.default .widget-box .text-content-elememnt {
+	padding-right: 100px;
+}
+.footer .widget-box .text-content-elememnt p {
+	margin-bottom: 0;
+}
+.footer .widgettitle {
+	font-size: 14px;
+	font-weight: 700;
+	padding-left: 15px;
+	margin-bottom: 15px;
+	line-height: 24px;
+	position: relative;
+	margin-top: 10px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.footer .widgettitle::before {
+	content: '';
+	border-left: 3px solid #039BE5;
+	height: 19px;
+	position: absolute;
+	left: 0;
+	top: 3px;
+}
+.footer .menu {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.footer .menu .menu-item {
+	font-size: 15px;
+	color: #868686;
+	line-height: 26px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.footer .menu .menu-item:hover {
+	color: #039BE5;
+}
+.footer .menu .menu-item > a > span {
+	padding-right: 5px;
+	color: #039BE5;
+}
+.footer .tanajil-socials .socials {
+	margin: 0;
+	padding-bottom: 10px;
+}
+.footer .tanajil-socials li {
+	list-style: none;
+	display: inline-block;
+	font-size: 23px;
+	color: #555555;
+}
+.footer .tanajil-socials li:first-child {
+	padding-left: 0;
+}
+.footer .tanajil-socials li a {
+	color: #fff;
+	background-color: #333;
+	border-radius: 50%;
+	min-width: 45px;
+	height: 45px;
+	font-size: 18px;
+	line-height: 45px;
+	margin-right: 10px;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	margin-top: 0px;
+}
+.footer .tanajil-socials li a::before {
+	content: '';
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	right: -1px;
+	bottom: -1px;
+	background-color: #039BE5;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: scale(.3);
+	-moz-transform: scale(.3);
+	-ms-transform: scale(.3);
+	-o-transform: scale(.3);
+	transform: scale(.3);
+	transition: 0.8s;
+	border-radius: 50%;
+}
+.footer .tanajil-socials li a:hover::before {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+.footer .tanajil-socials li a:hover {
+	border-color: #039BE5;
+	color: #FFFFFF
+}
+.footer .tanajil-socials li a i {
+	z-index: 1;
+	position: relative;
+}
+.footer .border-custom span {
+	margin-top: 45px;
+}
+
+
+/* -------------------- */
+/*   RESPONSIVE      */
+/* -------------------- */
+@media (max-width: 1199px) {
+	.item-banner.style1 .inner .title {
+		font-size: 30px;
+	}
+	.item-banner.style2 .title {
+		font-size: 28px;
+	}
+	.item-banner .hot-price .price-number {
+		font-size: 26px;
+	}
+	.product-item.style-list .product-name {
+		font-size: 18px;
+	}
+	.tanajil-product.layout1 .head .title {
+		font-size: 24px;
+	}
+	.tanajil-newsletter.default .title {
+		font-size: 26px;
+	}
+	.tanajil-blog-item .blog-title {
+		font-size: 16px;
+	}
+	.tanajil-tabs .tab-link li a {
+		font-size: 12px;
+	}
+	.item-banner.style15 .title,
+	.item-banner.style16 .title {
+		font-size: 26px;
+	}
+	.tanajil-tabs.default.rows-space-40 {
+		margin-bottom: 35px;
+	}
+	.item-banner.style17 .title,
+	.item-banner.style4 .title, .item-banner.style5 .title, .item-banner.style7 .title, .item-banner.style8 .title, .item-banner.style17 .title,
+	.item-banner.style4 .title, .item-banner.style5 .title, .item-banner.style7 .title, .item-banner.style8 .title {
+		font-size: 24px;
+	}
+	.tanajil-newsletter.style3 .title {
+		font-size: 24px;
+	}
+	.tanajil-newsletter.style3 {
+		padding: 75px 0 65px;
+	}
+	.team-member .border-custom {
+		margin-top: 55px;
+	}
+	.tanajil-newsletter.style3::before,
+	.item-banner .inner::before,
+	.slider-item .slider-inner::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #fff;
+		opacity: 0.5;
+		display: none;
+	}
+	.banner-wrapp.rows-space-65,
+	.tanajil-product.produc-featured .rows-space-65 {
+		margin-bottom: 55px;
+	}
+	.home-slider-banner {
+		margin-bottom: 33px;
+	}
+	.tanajil-newsletter.default .subtitle {
+		margin-bottom: 20px;
+	}
+	.tanajil-iconbox.default {
+		padding: 25px 10px;
+	}
+	.slider-item.style4 .title-big,
+	.slider-item.style5 .title-big,
+	.slider-item.style6 .title-big {
+		font-size: 34px;
+	}
+	.sevice-box-content .sevice-title,
+	.header-banner .title {
+		font-size: 28px;
+		font-weight: 500;
+	}
+	.comments-area {
+		margin-bottom: 50px;
+	}
+	.pagination {
+		margin-top: 35px;
+	}
+	.pagination.grid {
+		margin-top: 10px;
+	}
+	.post-item .post-title {
+		font-size: 24px;
+	}
+	.tanajil-product.produc-featured.rows-space-65 {
+		margin-bottom: 55px;
+	}
+	.item-banner.style9 .title {
+		font-size: 28px;
+	}
+	.tanajil-tabs.default.rows-space-30 {
+		margin-bottom: 20px;
+	}
+	.item-banner.style21 .title {
+		font-size: 36px;
+	}
+	.slick-dots {
+		margin-top: 30px;
+	}
+	.tanajil-blog-wraap.default {
+		padding-top: 52px;
+		padding-bottom: 52px;
+	}
+	.banner-pinmap-wrapp.rows-space-70 {
+		margin-bottom: 55px;
+	}
+	.home-slider.fullwidth.rows-space-60 {
+		margin-bottom: 45px;
+	}
+	.banner-video-wrapp.rows-space-40,
+	.tanajil-product.produc-featured.rows-space-40 {
+		margin-bottom: 25px;
+	}
+	.tanajil-product.layout1 {
+		padding: 55px 0 20px;
+	}
+	.banner-wrapp.rows-space-30 {
+		margin-bottom: 25px;
+	}
+	.slider-item .title-big {
+		font-size: 30px;
+	}
+	.banner-wrapp.rows-space-35 {
+		margin-bottom: 20px;
+	}
+	.banner-wrapp.rows-space-60 {
+		margin-bottom: 55px;
+	}
+	.tanajil-tabs.default.rows-space-40 {
+		margin-bottom: 35px;
+	}
+	.item-banner.style6 .title {
+		font-size: 36px;
+	}
+	.product-in-stock-wrapp.rows-space-40 {
+		margin-bottom: 20px;
+	}
+	.product-grid-title,
+	.custommenu-title-blog {
+		font-size: 26px;
+		margin-bottom: 40px;
+	}
+	.main-content {
+		padding-bottom: 55px;
+	}
+	.banner-wrapp.rows-space-70 {
+		margin-bottom: 50px;
+	}
+	.instagram-wrapp .custommenu-title-blog {
+		margin-top: 50px;
+	}
+	.tanajil-tabs .tab-head {
+		margin-bottom: 35px;
+	}
+	.footer .container-wapper {
+		padding-top: 55px;
+	}
+	.footer .widgettitle {
+		margin-bottom: 26px;
+	}
+	.home-slider.style1 {
+		padding-top: 0;
+	}
+	.form-message {
+		padding: 45px;
+	}
+	.blog-slider.style-1 .blog-item {
+		margin: 0;
+	}
+	.footer .border-custom span {
+		margin-top: 20px;
+	}
+	.slider-product .slick-slider > .slick-arrow:first-child, .tanajil-blog .slick-slider > .slick-arrow:first-child {
+		left: 0;
+	}
+	.slider-product .slick-slider > .slick-arrow, .tanajil-blog .slick-slider > .slick-arrow {
+		right: 0;
+	}
+	/*header style1*/
+	.header.style1 .header-element {
+		float: right;
+		text-align: right;
+	}
+	.header.style1 .header-language .tanajil-language {
+		margin-left: 25px;
+		float: left;
+	}
+	.header .logo {
+		text-align: left;
+	}
+	.header .header-nav {
+		display: none;
+	}
+	.header .header-block-text, .tanajil-menu-panel .header-block-text {
+		display: none;
+	}
+	.header-control {
+		text-align: center;
+		padding: 20px 0 0;
+	}
+	.header-language .tanajil-submenu {
+		left: auto;
+		right: 0
+	}
+	.block-search .tanajil-submenu {
+		left: -100%;
+		right: auto;
+	}
+	.submenu.menu-page {
+		padding: 30px 20px;
+	}
+	.mega-menu .tanajil-custommenu {
+		margin-bottom: 30px;
+	}
+	/*footer*/
+	.footer .box-footer {
+		margin-bottom: 20px;
+	}
+	/*contact page*/
+	.tanajil-contact-info .socials {
+		padding-top: 15px;
+	}
+	/*product list*/
+	.product-item.style-list .product-info-left {
+		width: auto;
+		padding: 0 10px;
+	}
+	.product-item.style-list .product-info-right {
+		border: 0;
+		text-align: left;
+		padding: 0 0 0 10px;
+		width: auto;
+	}
+	.full-width .product-item.style-list .product-info-right {
+		width: auto;
+	}
+	.product-item.style-list .product-thumb {
+		border: none;
+		padding-right: 10px;
+	}
+	.slider-lookbook.nav-center > .slick-arrow {
+		opacity: 0;
+		visibility: hidden;
+	}
+	/*in lookbook*/
+	.slider-lookbook:hover > .slick-arrow {
+		opacity: 1;
+		visibility: visible;
+	}
+	.slick-slider.slider-lookbook.nav-center > .slick-arrow {
+		right: 0;
+	}
+	.slick-slider.slider-lookbook.nav-center > .slick-arrow:first-child {
+		left: 0;
+	}
+	/*menu mobile*/
+	.header.style7 .mobile-navigation {
+		top: -10px;
+	}
+	.mobile-navigation {
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 17px;
+		border: 2px solid #dedede;
+		border-radius: 4px;
+		padding: 14px 11px 10px;
+		position: relative;
+	}
+	.mobile-navigation span {
+		background-color: #333;
+		display: block;
+		width: 16px;
+		margin-bottom: 3px;
+		height: 2px;
+	}
+	/*checkout page*/
+	.checkout-wrapp .row-col-2 {
+		padding-left: 15px;
+	}
+	/*shop page*/
+	.full-width .details-thumd {
+		padding-left: 0;
+	}
+	
+	/*==========home 03=========*/
+	/*header style3*/
+	.header.style3 .block-search .tanajil-submenu {
+		left: auto;
+		right: 0;
+	}
+	/*footer*/
+	.footer.style3 .tanajil-custommenu.style1 {
+		padding-left: 0;
+	}
+	
+}
+@media (max-width: 1024px) {
+	/*header*/
+	.main-menu .submenu .submenu {
+		left: 60%;
+		top: 50%;
+	}
+}
+@media (max-width: 1199px) and (min-width: 768px) {
+	.col-lg-4.banner-wrapp .banner {
+		width: calc(50% - 10px);
+		float: left;
+	}
+	.col-lg-4.banner-wrapp .banner:last-child {
+		float: right;
+	}
+}
+@media (max-width: 991px) {
+	.item-banner.style7 .banner-content {
+		padding-right: 130px;
+	}
+	/*popup*/
+	.kt-popup-newsletter .image-newsletter {
+		display: none !important;
+	}
+	.kt-popup-newsletter.style-1 {
+		width: 100%;
+	}
+	.kt-popup-newsletter .popup-content {
+		text-align: center;
+	}
+	/*single blog*/
+	.sidebar .wrapper-sidebar {
+		margin-top: 40px;
+	}
+	/*footer*/
+	.coppyright, .footer-end .tanajil-payment, .footer-end .demos {
+		text-align: center;
+		padding: 5px 0;
+	}
+	.footer .widget-box .text-content-elememnt {
+		padding-right: 0;
+	}
+}
+@media (max-width: 767px) {
+	.product-item.style-list .product-name {
+		font-size: 16px;
+	}
+	.title-form {
+		font-size: 16px;
+	}
+	.item-banner.style15 .title, .item-banner.style16 .title {
+		font-size: 22px;
+	}
+	.banner-video-wrapp.rows-space-40 {
+		margin-bottom: 15px;
+	}
+	.tanajil-product.produc-featured.rows-space-40 {
+		margin-bottom: 20px;
+	}
+	.item-banner.style1 .title br {
+		display: block;
+	}
+	.item-banner .title br {
+		display: none;
+	}
+	.tanajil-blog-wraap.default {
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+	.instagram-wrapp .custommenu-title-blog {
+		margin-top: 45px;
+	}
+	.item-banner.style11 .title {
+		font-size: 24px;
+	}
+	.tanajil-product.produc-featured.rows-space-65 {
+		margin-bottom: 45px;
+	}
+	.slider-item .title-big {
+		font-size: 24px;
+		font-weight: 500;
+	}
+	.item-banner .title {
+		font-weight: 500;
+	}
+	.slider-item .price .number-price,
+	.item-banner.style17 .number-price {
+		font-size: 20px;
+		font-weight: 500;
+	}
+	.item-banner .tanajil-subtitle {
+		font-size: 13px;
+	}
+	.item-banner.style17 .title,
+	.item-banner.style4 .title, .item-banner.style5 .title, .item-banner.style7 .title, .item-banner.style8 .title, .item-banner.style17 .title,
+	.item-banner.style4 .title, .item-banner.style5 .title, .item-banner.style7 .title, .item-banner.style8 .title {
+		font-size: 20px;
+	}
+	.tanajil-tabs .tab-link::before {
+		display: none;
+	}
+	.footer .widgettitle {
+		margin-bottom: 13px;
+	}
+	.shop-top-control {
+		padding-bottom: 10px;
+	}
+	.tanajil-newsletter.style1 .title, .tanajil-newsletter.style2 .title, .footer .widgettitle {
+		margin-bottom: 13px;
+	}
+	.tanajil-newsletter.style3 .title {
+		font-size: 20px;
+	}
+	.tanajil-iconbox .content .title {
+		font-size: 14px;
+	}
+	.tanajil-newsletter.style3 {
+		overflow: hidden;
+		padding-top: 40px;
+		padding-bottom: 30px;
+	}
+	.footer .tanajil-socials li a {
+		height: 40px;
+		line-height: 40px;
+		min-width: 40px;
+		margin-bottom: 7px;
+		font-size: 16px;
+	}
+	.slider-item.style4 .slider-inner .slider-infor, .slider-item.style5 .slider-inner .slider-infor, .slider-item.style6 .slider-inner .slider-infor,
+	.slider-item.style1 .slider-inner .slider-infor, .slider-item.style3 .slider-inner .slider-infor, .slider-item.style2 .slider-inner .slider-infor,
+	.slider-item.style7 .slider-inner .slider-infor, .slider-item.style8 .slider-inner .slider-infor, .slider-item.style9 .slider-inner .slider-infor,
+	.slider-item.style13 .slider-inner .slider-infor, .slider-item.style14 .slider-inner .slider-infor, .slider-item.style15 .slider-inner .slider-infor,
+	.slider-item.style19 .slider-inner .slider-infor, .slider-item.style20 .slider-inner .slider-infor, .slider-item.style21 .slider-inner .slider-infor,
+	.slider-item.style25 .slider-inner .slider-infor, .slider-item.style26 .slider-inner .slider-infor, .slider-item.style27 .slider-inner .slider-infor {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+	.item-banner.style1 .inner .title {
+		font-size: 26px;
+	}
+	.item-banner.style2 .title {
+		font-size: 24px;
+	}
+	.button, button, input[type="submit"] {
+		font-size: 12px;
+	}
+	.item-banner.style10 .title {
+		font-size: 28px;
+		line-height: 1.2;
+	}
+	.banner-wrapp.rows-space-65 {
+		margin-bottom: 40px;
+	}
+	.home-slider-banner {
+		margin-bottom: 25px;
+	}
+	.banner-wrapp.rows-space-70 {
+		margin-bottom: 43px;
+	}
+	.details-infor .product-title {
+		font-size: 22px;
+	}
+	.details-infor .price {
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+	.sevice-item.style-1 {
+		padding-bottom: 40px;
+		margin-bottom: 40px;
+	}
+	.content-inlookbook .pagination {
+		margin-bottom: 40px;
+	}
+	.wapper-slider-lookbook {
+		padding: 40px 0;
+	}
+	.slider-lookbook-item .lookbook-inner {
+		padding: 15px;
+	}
+	.sevice-box-content .sevice-title,
+	.header-banner .title {
+		font-size: 22px;
+	}
+	.pagination {
+		margin-top: 30px;
+	}
+	.comments-area {
+		margin-bottom: 30px;
+	}
+	.comments-area .comment .children {
+		padding-left: 30px;
+		padding-top: 30px;
+	}
+	.comment-form .comment-reply-content {
+		padding: 0 15px;
+	}
+	.comment-form {
+		padding-top: 0;
+		margin-bottom: 30px;
+	}
+	blockquote, q {
+		margin-bottom: 25px;
+		margin-top: 0;
+	}
+	.post-item .post-title {
+		font-size: 22px;
+	}
+	.blog-articles > .custom_blog_title, .comments-area > .custom_blog_title {
+		font-size: 16px;
+	}
+	.widget .widgettitle {
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+	.widget {
+		margin-bottom: 30px;
+	}
+	.newsletter-widget {
+		padding: 20px 15px;
+	}
+	.form-message .title {
+		margin-bottom: 15px;
+		font-size: 14px;
+	}
+	.tanajil-newsletter.style3 {
+		overflow: hidden;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.tanajil-tabs.default.rows-space-30 {
+		margin-bottom: 10px;
+	}
+	.banner-wrapp.rows-space-60,
+	.tanajil-product.produc-featured.rows-space-60 {
+		margin-bottom: 35px;
+	}
+	.item-banner.style9 .title {
+		font-size: 22px;
+	}
+	.tanajil-product.layout1 .head .title {
+		font-size: 22px;
+	}
+	.tanajil-product.layout1 {
+		padding: 40px 0 20px;
+	}
+	.banner-pinmap-wrapp.rows-space-70 {
+		margin-bottom: 40px;
+	}
+	.home-slider.fullwidth.rows-space-60 {
+		margin-bottom: 35px;
+	}
+	.item-banner.style16 .title,
+	.item-banner.style12 .title {
+		font-size: 26px;
+	}
+	.item-banner.style14 .title {
+		font-size: 30px;
+	}
+	.product-in-stock-wrapp.rows-space-40 {
+		margin-bottom: 10px;
+	}
+	.instagram-wrapp .custommenu-title-blog i {
+		font-size: 50px;
+	}
+	.home-slider .slick-slider.nav-center > .slick-arrow {
+		display: none !important;
+	}
+	.tanajil-newsletter.default .title,
+	.product-grid-title,
+	.custommenu-title-blog {
+		font-size: 20px;
+	}
+	.product-grid-title,
+	.custommenu-title-blog {
+		margin-bottom: 30px;
+	}
+	.tanajil-tabs .tab-head {
+		margin-bottom: 30px;
+	}
+	.tanajil-tabs.default.rows-space-40 {
+		margin-bottom: 25px;
+	}
+	.banner-wrapp.rows-space-60 {
+		margin-bottom: 47px;
+	}
+	.logo img {
+		max-width: 140px;
+	}
+	.slick-dots {
+		margin-top: 25px;
+	}
+	.tanajil-tabs .tab-link li a {
+		margin: 0 15px;
+		font-size: 11px;
+	}
+	.item-banner.style6 .title {
+		font-size: 24px;
+	}
+	.product-grid-title {
+		padding-top: 35px;
+	}
+	.tab-details-product {
+		margin-top: 40px;
+	}
+	.cart-form .shop_table tbody tr.cart_item td.product-remove {
+		position: static;
+		transform: none;
+		padding: 20px 0 10px;
+	}
+	.cart-form .shop_table,
+	.cart-form .shop_table tbody,
+	.cart-form .shop_table tr,
+	.cart-form .shop_table td {
+		display: block !important;
+		text-align: center !important;
+		width: 100% !important;
+	}
+	.cart-form .shop_table .product-price {
+		padding-bottom: 20px;
+	}
+	.cart-form .shop_table tbody > tr > td.actions {
+		padding: 20px;
+	}
+	.shop_table .actions > .order-total {
+		float: none;
+	}
+	.cart-form .shop_table .product-quantity .quantity {
+		margin: 0 auto;
+	}
+	.breadcrumb {
+		padding: 25px 0 20px;
+	}
+	.custom_blog_title {
+		margin-bottom: 30px;
+		font-size: 18px;
+	}
+	.blog-articles > .main-info-post {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.error-404 {
+		padding: 35px 0 0;
+	}
+	.footer {
+		margin-bottom: 60px;
+	}
+	.footer .footer-end {
+		padding: 20px 0;
+	}
+	.footer .container-wapper {
+		padding-top: 40px;
+	}
+	.footer .border-custom span {
+		margin-top: 20px;
+	}
+	.header .main-header, .header .top-bar {
+		display: none;
+	}
+	.footer-device-mobile, .header-device-mobile {
+		display: block;
+	}
+	/*single blog*/
+	.blog-item .post-format {
+		float: none;
+		width: auto;
+	}
+	.blog-list .blog-item .post-format {
+		max-width: 100%;
+	}
+	.blog-item .post-info {
+		width: 100%;
+		padding: 0;
+		overflow: visible;
+	}
+	.blog-item .post-info::before {
+		display: none;
+	}
+	.blog-slider.style-1 .blog-item {
+		margin: 0;
+		padding: 15px;
+	}
+	.blog-list .blog-item {
+		padding: 20px;
+	}
+	/*short code*/
+	/*pagination*/
+	.pagination .page-numbers {
+		margin-bottom: 10px;
+	}
+	/*404 page*/
+	.error-404 {
+		display: block;
+	}
+	.error-404 .images, .error-404 .text-404 {
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding-left: 0;
+	}
+	.error-404 .images {
+		margin-bottom: 30px;
+	}
+	.error-404 .search-form .search-field {
+		margin-right: 0
+	}
+	.text-404 .page-title {
+		margin-top: 0;
+	}
+	/*about page*/
+	.tanajil-iconbox.layout1 {
+		text-align: center;
+		margin-top: 50px;
+	}
+	.tanajil-iconbox.layout1 .icon-item {
+		display: inline-block;
+	}
+	/*shop page*/
+	.shop-top-control .select-form, .shop-top-control .grid-view-mode, .shop-top-control {
+		display: inline-block;
+		text-align: center;
+		vertical-align: top;
+	}
+	.shop-top-control .select-form, .grid-view-mode {
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	.shop-top-control .grid-view-mode {
+		width: auto;
+	}
+	.full-width .details-thumd {
+		padding: 0;
+	}
+	.full-width .details-thumd .owl-nav .owl-prev {
+		left: 0;
+	}
+	.full-width .details-thumd .owl-nav .owl-next {
+		right: 0;
+	}
+	/*product item*/
+	.product-item .loop-form-add-to-cart {
+		display: none;
+	}
+	/*product list*/
+	.product-item.style-list .product-thumb, .product-item.style-list .product-info-left, .product-item.style-list .product-info-right {
+		display: block;
+		padding: 0;
+		border: none;
+		text-align: center;
+		margin: 0 auto
+	}
+	.product-item.style-list .yith-wcwl-add-to-wishlist {
+		width: auto;
+		float: none;
+	}
+	.slider-lookbook-item .lookboox-thumb {
+		float: none;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.slider-lookbook-item .lookboox-infore {
+		padding: 15px 0 0;
+	}
+	.slider-lookbook-item .name-lookbook {
+		margin-bottom: 20px;
+	}
+	/*details page*/
+	.details-thumd {
+		width: 100%;
+		padding: 0;
+		margin-bottom: 30px;
+	}
+	.details-infor {
+		width: 100%;
+		padding: 0;
+		border: 0;
+		float: none;
+	}
+	.tab-details-product .tab-link li {
+		display: block;
+		text-align: center;
+		padding: 0;
+		margin-bottom: 10px;
+	}
+	/*backtotop*/
+	.backtotop.show {
+		display: none !important;
+	}
+}
+@media (max-width: 480px) {
+	.tanajil-newsletter.style3 .title,
+	.tanajil-newsletter.default .title,
+	.product-grid-title,
+	.custommenu-title-blog {
+		font-size: 18px;
+	}
+	.slider-item .title-big {
+		max-width: 100%;
+	}
+	.tanajil-blog-item.style2 .post-thumb {
+		float: none;
+		width: auto;
+	}
+	.tanajil-blog-item.style2 .blog-title {
+		margin-bottom: 30px;
+	}
+	.tanajil-blog-item.style2 .blog-info {
+		width: 100%;
+		padding: 0;
+		overflow: visible;
+	}
+	.coppyright {
+		font-size: 13px;
+	}
+	.product-item .product-inner {
+		text-align: center;
+	}
+	.product-list-owl .product-item .thumb-inner img {
+		margin: 0 auto;
+	}
+	/*single blog*/
+	.view-share .author-view, .view-share .share {
+		display: block;
+		float: none;
+	}
+	.comment-form .form-submit .controll {
+		float: none;
+		text-align: center;
+	}
+	/*short code*/
+	.pagination.style1 {
+		text-align: center;
+	}
+	/*login*/
+	.customer_login .login, .customer_login .register {
+		padding: 20px 15px 10px;
+	}
+	.customer_login .title-login {
+		padding: 15px;
+	}
+	/*contact page*/
+	.form-message, .form-contact-information {
+		padding: 20px 15px
+	}
+	.tanajil-contact-info .socials {
+		padding-top: 0;
+	}
+	.tanajil-contact-info .item {
+		margin-bottom: 20px;
+	}
+	/*shop page*/
+	.shop-top-control .select-form, .shop-top-control .grid-view-mode, .shop-top-control {
+		display: block;
+		width: 100%;
+		border: none;
+	}
+	.shop-top-control {
+		padding-top: 10px;
+		margin-bottom: 30px;
+	}
+	.shop-top-control .grid-view-mode {
+		margin-bottom: 0;
+	}
+	/*lookbook*/
+	.sevice-box-content {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	/*checkout page*/
+	.shipping-address .form-row.form-row-first, .shipping-address .form-row.form-row-last {
+		width: 100%;
+	}
+	.shipping-address .form-row.form-row-last {
+		float: none;
+	}
+	.checkout-wrapp .forn-row-col {
+		width: 100%;
+		padding: 0;
+	}
+	.payment-method .form-row-card-number {
+		max-width: 100%;
+	}
+	.list-product-order .product-thumb {
+		float: none;
+		width: auto;
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+	/*shop page*/
+	.item-banner .button {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+}
+
+.product-item .button:hover, .tanajil-newsletter.style3 .newsletter-form-wrap .submit-newsletter:hover, .slider-item .slider-infor .button:hover {
+	background: #ffffff;
+	color: #039BE5;
+	border-color: #039BE5;
+}
+
+@media (min-width: 1367px) {
+	.home-slider.fullwidth.rows-space-60 {
+		margin-bottom: 80px;
+	}
+	.banner-wrapp.rows-space-35 {
+		margin-bottom: 55px;
+	}
+	.tanajil-tabs.default.rows-space-40 {
+		margin-bottom: 60px;
+	}
+	.banner-wrapp.rows-space-60 {
+		margin-bottom: 80px;
+	}
+	.banner-wrapp.rows-space-30 {
+		margin-bottom: 50px;
+	}
+	.main-content {
+		padding-bottom: 85px;
+	}
+	
+	.home-slider-banner {
+		margin-bottom: 18px;
+	}
+	.tanajil-product.produc-featured.rows-space-65 {
+		margin-bottom: 82px;
+	}
+	.banner-wrapp.rows-space-65 {
+		margin-bottom: 85px;
+	}
+	.tanajil-blog-wraap.default {
+		padding-top: 72px;
+		padding-bottom: 75px;
+	}
+	.home-slider.fullwidth.rows-space-60 {
+		margin-bottom: 80px;
+	}
+	.tanajil-product.produc-featured.rows-space-40 {
+		margin-bottom: 60px;
+	}
+	.banner-pinmap-wrapp.rows-space-70 {
+		margin-bottom: 90px;
+	}
+	.tanajil-product.layout1 {
+		padding: 90px 0 52px;
+	}
+}
+.product-item .product-inner img {
+	width: 100%;
+}
+
+/* Código extra */
+
+#emailSuscrip {
+	color: none;
+}
+
+#btnSuscripcion {
+	color: none;
+}
+
+#contenedor-productos {
+	color: none;
+}
+
+/* Cart */
+
+#cart {
+	position: relative;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#cartItemCounter {
+	color: #FFFFFF;
+    background-color: #039BE5;
+    /* padding-left: .2em; */
+    position: relative;
+	margin-bottom: 20px;
+    /* margin: .8em 7.5em 0 0; */
+    right: 0;
+    border: solid 1px #039BE5;
+    border-radius: 5px 5px 5px 5px;
+	font-family: 'Rubik', sans-serif;
+	font-size: 14px;
+}
+
+.shoppingCartContainer {
+	display: flex nowrap;
+}
+
+#shoppingCartItems {
+	display: flex;
+	flex-flow: column;
+	/* margin-top: 3em;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto; */
+}
+
+.productName {
+	color: none;
+}
+
+.cart-price {
+	color: #555555;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.remove-btn {
+    background-color: red;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+	justify-content: center;
+    margin-left: 3rem;
+    font-weight: bolder;
+    font-size: 1rem;
+	height: 35px;
+  }
+
+.cart-items {
+	color: none;
+}
+
+#close-btn {	
+    font-size: 1.5rem;
+    float: right;
+    margin: .6em 0.9em 0 0;
+    color: #888888;
+    cursor: pointer;
+}
+
+.product-quantity {
+	width: 4rem;
+    font-size: 2rem;
+    margin-left: 3rem;
+}
+
+#shoppingCartModel {
+	color: none;
+}
+
+#emptyShoppingCart {
+	margin-bottom: 10px;
+}
+
+.cart-quantity {
+    color: #FFFFFF;
+    background-color: #039BE5;
+    padding: .2em .3em;
+    position: absolute;
+    right: 0;
+    border: solid 1px #039BE5;
+    border-radius: 15px;
+    font-weight: bolder;
+  }
+
+.totalAmount {
+	color: #555555;
+	font-size: 15px;
+	padding-left: 5px;
+}
+
+.subtotal {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
+.totalSection {
+	display: flex;
+	margin-top: 10px;
+	flex-flow: row wrap;
+	font-size: larger;
+}
+
+.total-title {
+	color: #555555;
+	margin-bottom: 10px;
+}
+
+.button-checkout {
+	margin-bottom: 10px;
+}
+
+.btv-hover:hover {
+	background: #FFFFFF;
+	border: 1px solid #039BE5;
+	color: #039BE5;
+}
+
+/* Fin Cart */
+
+/* Sales Order */
+
+#orderItemCounter {
+	color: #FFFFFF;
+    background-color: #039BE5;
+    /* padding-left: .2em; */
+    position: relative;
+	margin-bottom: 20px;
+    /* margin: .8em 7.5em 0 0; */
+    right: 0;
+    border: solid 1px #039BE5;
+    border-radius: 5px 5px 5px 5px;
+	font-family: 'Rubik', sans-serif;
+	font-size: 14px;
+}
+
+.button-finish {
+	margin-bottom: 10px;
+}
+
+/* Fin Sales Order */
+
+#btnVenta {
+	margin: 10px 10px;
+}
+
+.listaClientesDisp {
+	list-style-type: none;
+}
+
+#clientesDisponibles {
+	color: none;
+}
+
+#cargarCantidades {
+	color: none;
+}
+
+#cargarOrden {
+	color: none;
+}
+
+#btnIngresoCliente {
+	margin-right: 10px;
+}
+
+#nombre {
+	color: none;
+}
+
+#apellido {
+	color: none;
+}
+
+#direccion {
+	color: none;
+}
+
+#telefonoContacto {
+	color: none;
+}
+
+#parrafo {
+	color: none;
+}
+
+.containerStock {
+	color: none;
+}
+
+#btn {
+	color: none;
+}
+
+#btnConfirmOrder {
+	margin-right: 10px;
+}
+
+.orderList {
+	color: none;
+}
+
+.tr-box {
+	font-size: medium;
+	/* display: flex;*/
+	justify-content:space-around;
+	/* padding: 0px 25px; */
+	width: fit-content;
+}
+
+/* estilos Web forms */
+
+.formButtons {
+	display: flex;
+    flex-flow: row nowrap;
+	padding-bottom: 5px;
+}
+
+.formCrearClientes {
+	align-items: center;
+	display: flex;
+    flex-flow: column nowrap;
+	margin: 20px 350px;
+	background-color: #FFFFFF;
+	-webkit-box-shadow: 0 0 12px 0 rgba(2, 2, 2, 0.16);
+	-moz-box-shadow: 0 0 12px 0 rgba(2, 2, 2, 0.16);
+	box-shadow: 0 0 12px 0 rgba(2, 2, 2, 0.16);
+	border-radius: 0;
+	overflow: hidden;
+}
+
+.formStyle {
+	padding-left: 50px;
+	padding-right: 50px;
+	display: flex;
+	align-items: left;
+    flex-flow: column nowrap;
+}
