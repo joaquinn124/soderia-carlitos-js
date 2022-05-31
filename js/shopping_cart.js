@@ -112,7 +112,6 @@ function updatePrice () {
     }
     document.querySelector(".totalAmount").innerText = "$" + total;
     document.querySelector(".cart-quantity").textContent = shoppingCartItems.length;
-    console.log(typeof 'total');
 }
 
 //vaciar carrito

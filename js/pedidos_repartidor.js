@@ -106,7 +106,7 @@ function updateQuantity (e) {
 function updatePrice () {
     let total = 0;
     for (const product of shoppingCartItems) {
-        let price = parseFloat(product.querySelector(".cart-price").innerText.replace("Precio $",""));
+        let price = parseFloat(product.querySelector(".cart-price").innerHTML.replace("Precio $",""));
         let quantity = product.querySelector(".product-quantity").value;
         total += price * quantity;
     }
