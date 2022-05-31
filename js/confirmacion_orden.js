@@ -30,21 +30,21 @@
 
     confirmData.addEventListener ("click", () =>{
         if (document.getElementById("nombre").value != "" && document.getElementById("apellido").value != "" && document.getElementById("direccion").value != "" && document.getElementById("telefonoContacto").value != "") {
-        createOrder();
-        Toastify({
-            text: "Cliente creado exitosamente!",
-            duration: 3000,
-            gravity: "top",
-            position: "center",
-            stopOnFocus: true,
-            offset: {
-                x: -20,
-                y: 170
-              },
-            style: {
-              background: "linear-gradient(to right, #C6FF00, #9E9D24)",
+          createOrder();
+          Toastify({
+          text: "Su compra ha sido cargada correctamente!",
+          duration: 3000,
+          gravity: "top",
+          position: "center",
+          stopOnFocus: true,
+          offset: {
+              x: -20,
+              y: 170
             },
-          }).showToast();
+          style: {
+            background: "linear-gradient(to right, #C6FF00, #9E9D24)",
+          },
+        }).showToast();
         } else {
             Toastify({
                 text: "Campos vacíos. Por favor verificar datos ingresados",
